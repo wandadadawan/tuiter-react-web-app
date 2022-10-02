@@ -9,11 +9,7 @@
   border-radius: 12px;
   color: white;
   background-color: darkgray;
-}
-
-.wd-tuit-content {
-  background-color: rgb(30, 30, 30);
-  height: 10px;
+  float: left;
 }
 
 .wd-search-gear {
@@ -21,6 +17,11 @@
   margin-right: 12px;
   font-size: 25px;
   float:right;
+}
+
+.wd-tuit-blank-content {
+  background-color: rgb(30, 30, 30);
+  height: 10px;
 }
 
 .wd-nav-tab {

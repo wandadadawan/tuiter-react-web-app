@@ -26,14 +26,14 @@
 .wd-bookmarked-post-content {
   font-size: 15px;
   color: white;
-  position: relative;
-  left: 12px;
   float: left;
+  margin-left: 12px;
 }
 
 .wd-bookmarked-post-content-text {
   max-width: 506px;
   margin-bottom: 12px;
+  margin-right: 16px;
 }
 
 .wd-bookmarked-post-content-image {
@@ -47,7 +47,7 @@
 .wd-bookmarked-post-content-image-description {
   padding: 12px;
   border: solid rgb(47, 51, 54) 1px;
-  color: rgb(47, 51, 54);
+  color: lightgray;
   width: 480px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
