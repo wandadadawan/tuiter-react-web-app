@@ -1,0 +1,27 @@
+body {
+  background-color: black;
+  color: white;
+  font-family: "Arial";
+}
+
+.wd-border {
+  border: solid rgb(47, 51, 54) 1px;
+  padding-left: 16px;
+  margin-left: 12px; /* user defined. This is the space between border to window's left side where ABCDEFG shows */
+}
+
+.wd-float-done {
+  clear:both;
+}
+
+.wd-float-left {
+  float: left;
+}
+
+.wd-color-light-gray {
+  color: rgb(47, 51, 54);
+}
+
+.wd-color-red {
+  color: red;
+}

@@ -1,17 +1,5 @@
-body {
-  background-color: black;
-  color: white;
-  font-family: "Arial";
-}
-
-.wd-border {
-  border: solid rgb(47, 51, 54) thin;
-  padding-left: 16px;
-  margin-left: 32px;
-}
-
 .wd-search-and-setting-row {
-  margin-top: 0.5em;
+  margin-top: 12px;
 }
 
 .wd-search-bar {
@@ -30,14 +18,14 @@ body {
 
 .wd-search-gear {
   color: dodgerblue;
-  padding-right: 12px;
+  margin-right: 12px;
   font-size: 25px;
   float:right;
 }
 
 .wd-nav-tab {
   font-size: 15px;
-  margin-left: -56px;
+  margin-left: -56px; /* offset: 40 of ul inline padding and 16 li left padding */
   margin-bottom: 3px;
 }
 
@@ -88,14 +76,6 @@ body {
   border-radius: 20px;
   float: right;
   margin-right: 16px;
-}
-
-.wd-float-done {
-  clear:both;
-}
-
-.wd-float-left {
-  float: left;
 }
 
 .wd-text-width {

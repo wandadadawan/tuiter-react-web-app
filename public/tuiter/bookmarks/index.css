@@ -1,0 +1,75 @@
+.wd-title {
+  margin-top: 12px;
+  margin-bottom: 6px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.wd-post-handle {
+  color: lightgray;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.wd-bookmarked-post {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.wd-bookmarked-post-avatar {
+  border-radius: 50%;
+  width: 48px;
+  float: left;
+}
+
+.wd-bookmarked-post-content {
+  font-size: 15px;
+  color: white;
+  position: relative;
+  left: 12px;
+  float: left;
+}
+
+.wd-bookmarked-post-content-text {
+  max-width: 506px;
+  margin-bottom: 12px;
+}
+
+.wd-bookmarked-post-content-image {
+  width: 504px;
+  height: 264px;
+  border: solid rgb(47, 51, 54) 1px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.wd-bookmarked-post-content-image-description {
+  padding: 12px;
+  border: solid rgb(47, 51, 54) 1px;
+  color: rgb(47, 51, 54);
+  width: 480px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: -5px;
+}
+
+.wd-bookmarked-post-content-image-description-title {
+  color: white;
+  font-weight: bold;
+}
+
+.wd-bookmarked-post-icon {
+  margin-top: 12px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wd-bookmarked-post-icon-item > a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+.wd-bookmarked-post-icon-without-number {
+  margin-right: 12px;
+}
