@@ -209,6 +209,13 @@ p#id-selector-2 {
   color: white;
 }
 
+.rotate-list-my-example {
+  transform: rotate(-30deg);
+  width: 60px;
+  background-color: dodgerblue;
+  color: black;
+}
+
 .rotate-list-items li {
   width: 100px;
   text-align: right;
@@ -229,6 +236,10 @@ p#id-selector-2 {
 
 .rotate-image {
   transform: rotate(-10deg);
+}
+
+.rotate-image-my-example {
+  transform: rotate(20deg);
 }
 
 .rotate-table {
@@ -259,7 +270,7 @@ p#id-selector-2 {
 .gradients-linear-my-example {
   background: linear-gradient(red, orange, yellow, green, cyan, blue, purple);
   width: 200px;
-  height: 400px;
+  height: 200px;
 }
 
 .gradients-radial {
@@ -271,7 +282,7 @@ p#id-selector-2 {
 .gradients-radial-my-example {
   background: radial-gradient(mediumpurple, lightpink);
   width: 200px;
-  height: 400px;
+  height: 200px;
 }
 
 .gradients-positioned {
@@ -286,7 +297,7 @@ p#id-selector-2 {
 .gradients-positioned-my-example {
   background:
       radial-gradient(
-          at bottom right, darkorange, palegreen);
+          at bottom left, darkorange, palegreen);
   width: 200px;
   height: 200px;
   color: white;
@@ -511,7 +522,7 @@ and (max-width: 1800px) {
 }
 
 @media (min-width: 0px)
-and (max-width: 800px) {
+and (max-width: 600px) {
   body {
     background-color: lightpink;
   }
@@ -520,7 +531,17 @@ and (max-width: 800px) {
     color: darkblue;
   }
 }
-@media (min-width: 800px)
+@media (min-width: 600px)
+and (max-width: 1000px) {
+  body {
+    background-color: lightseagreen;
+  }
+  .media-query-my-example1 {
+    background-color: darkorange;
+    color: black;
+  }
+}
+@media (min-width: 1000px)
 and (max-width: 1800px) {
   body {
     background-color: gold;
@@ -532,7 +553,7 @@ and (max-width: 1800px) {
 }
 
 @media (min-width: 0px)
-and (max-width: 800px) {
+and (max-width: 600px) {
   body {
     background-color: lightpink;
   }
@@ -541,7 +562,17 @@ and (max-width: 800px) {
     color: darkorange;
   }
 }
-@media (min-width: 800px)
+@media (min-width: 600px)
+and (max-width: 1000px) {
+  body {
+    background-color: lightseagreen;
+  }
+  .media-query-my-example2 {
+    background-color: darkorchid;
+    color: goldenrod;
+  }
+}
+@media (min-width: 1000px)
 and (max-width: 1800px) {
   body {
     background-color: gold;
@@ -553,13 +584,23 @@ and (max-width: 1800px) {
 }
 
 @media (min-width: 0px)
-and (max-width: 800px) {
+and (max-width: 600px) {
   body {
     background-color: lightpink;
   }
   .media-query-my-example3 {
     background-color: black;
-    color: white;
+    color: lightgray;
+  }
+}
+@media (min-width: 600px)
+and (max-width: 1000px) {
+  body {
+    background-color: lightseagreen;
+  }
+  .media-query-my-example3 {
+    background-color: darkkhaki;
+    color: lightyellow;
   }
 }
 @media (min-width: 800px)
@@ -568,7 +609,7 @@ and (max-width: 1800px) {
     background-color: gold;
   }
   .media-query-my-example3 {
-    background-color: white;
+    background-color: lightgray;
     color: black;
   }
 }
