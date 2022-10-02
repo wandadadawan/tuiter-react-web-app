@@ -196,3 +196,379 @@ p#id-selector-2 {
   float: left;
 }
 
+.rotate-paragraph {
+  width: 250px;
+  height: 250px;
+  transform: rotate(90deg);
+}
+
+.rotate-list {
+  transform: rotate(12deg);
+  width: 100px;
+  background-color: red;
+  color: white;
+}
+
+.rotate-list-items li {
+  width: 100px;
+  text-align: right;
+}
+.rotate-list-items li:nth-child(1) {
+  transform: rotate(-10deg);
+  background-color: yellow;
+}
+.rotate-list-items li:nth-child(2) {
+  transform: rotate(2deg);
+  background-color: blue;
+  color: white;
+}
+.rotate-list-items li:nth-child(3) {
+  transform: rotate(10deg);
+  background-color: red;
+}
+
+.rotate-image {
+  transform: rotate(-10deg);
+}
+
+.rotate-table {
+  position: relative;
+  left: 50px;
+  transform: rotate(15deg);}
+.rotate-table tr:nth-child(1) {
+  background-color: black;
+  color: white;}
+.rotate-table tr:nth-child(n+2) {
+  background-color: yellow;}
+.rotate-table tr:nth-child(n+5) {
+  background-color: blue;
+  color: white;}
+.rotate-table tr:nth-child(n+8) {
+  background-color: red;}
+.rotate-table tr:nth-child(n+11) {
+  background-color: green;
+  color: white;
+}
+
+.gradients-linear {
+  background: linear-gradient(yellow, red);
+  width: 200px;
+  height: 200px;
+}
+
+.gradients-linear-my-example {
+  background: linear-gradient(red, orange, yellow, green, cyan, blue, purple);
+  width: 200px;
+  height: 400px;
+}
+
+.gradients-radial {
+  background: radial-gradient(yellow, green);
+  width: 200px;
+  height: 200px;
+}
+
+.gradients-radial-my-example {
+  background: radial-gradient(mediumpurple, lightpink);
+  width: 200px;
+  height: 400px;
+}
+
+.gradients-positioned {
+  background:
+      radial-gradient(
+          at top left, blue, red);
+  width: 200px;
+  height: 200px;
+  color: white;
+}
+
+.gradients-positioned-my-example {
+  background:
+      radial-gradient(
+          at bottom right, darkorange, palegreen);
+  width: 200px;
+  height: 200px;
+  color: white;
+}
+
+.animation-keyframes {
+  position: relative;
+  top: 0px;
+  animation-duration: 7s;
+  animation-name: slidein;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  color: white;
+}
+
+@keyframes slidein {
+  from {
+    position: relative;
+    top: 0px;
+    font-size: 100%;
+    margin-left: 100%;
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    color: black;
+  }
+
+  50% {
+    position: relative;
+    top: -200px;
+    font-size: 300%;
+    margin-left: 25%;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    color: white;
+  }
+
+  to {
+    position: relative;
+    top: 0px;
+    font-size: 100%;
+    margin-left: 0%;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+  }
+}
+
+.animation-keyframes-my-example {
+  position: relative;
+  top: 0px;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: chuwang-animation;
+  width: 300px;
+  height: 500px;
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+@keyframes chuwang-animation {
+  from {
+    position: relative;
+    top: 0px;
+    font-size: 50%;
+    margin-left: 500px;
+    width: 400px;
+    height: 100px;
+    background-color: #ff7070;
+    color: white;
+  }
+
+  50% {
+    position: relative;
+    top: -100px;
+    font-size: 120%;
+    margin-left: 30%;
+    width: 800px;
+    height: 200px;
+    background-color: green;
+    color: darkblue;
+  }
+
+  to {
+    position: relative;
+    top: 0px;
+    font-size: 150%;
+    margin-left: 0%;
+    width: 300px;
+    height: 400px;
+    background-color: #61dafb;
+    color: #282c34;
+  }
+}
+
+.flex-container-hori-center {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container-hori-end {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  justify-content: end;
+}
+
+.flex-container-hori-default {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+}
+
+.flex-container-hori-space-around {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-container-hori-space-between {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-container-vertical-space-start {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.flex-container-vertical-space-center {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.flex-container-vertical-space-fill {
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  display: flex;
+  /*justify-content: space-evenly;*/
+  /*align-items: flex-start;*/
+}
+
+.flex-container-vertical-space-fill > .flex-box {
+  flex-basis: 100%;
+}
+
+.flex-box {
+  border: 2px lightgray dotted;
+  margin: 20px;
+  padding: 12px;
+}
+.flex-box-1 {
+  background-color: red;
+}
+.flex-box-2 {
+  background-color: orange;
+  color: white;
+}
+.flex-box-3 {
+  background-color: yellow;
+  color: black;
+}
+.flex-box-4 {
+  background-color: green;
+  color: white;
+}
+
+@media (min-width: 0px)
+and (max-width: 600px) {
+  body {
+    background-color: yellow;
+  }
+  .media-query {
+    background-color: red;
+    color: white;
+  }
+}
+@media (min-width: 600px)
+and (max-width: 1200px) {
+  body {
+    background-color: blue;
+    color: white;
+  }
+  .media-query {
+    background-color: yellow;
+    color: black;
+  }
+}
+@media (min-width: 1200px)
+and (max-width: 1800px) {
+  body {
+    background-color: red;
+    color: white;
+  }
+  .media-query {
+    background-color: blue;
+    color: white;
+  }
+}
+
+@media (min-width: 0px)
+and (max-width: 800px) {
+  body {
+    background-color: lightpink;
+  }
+  .media-query-my-example1 {
+    background-color: lightgreen;
+    color: darkblue;
+  }
+}
+@media (min-width: 800px)
+and (max-width: 1800px) {
+  body {
+    background-color: gold;
+  }
+  .media-query-my-example1 {
+    background-color: lightskyblue;
+    color: white;
+  }
+}
+
+@media (min-width: 0px)
+and (max-width: 800px) {
+  body {
+    background-color: lightpink;
+  }
+  .media-query-my-example2 {
+    background-color: darkgreen;
+    color: darkorange;
+  }
+}
+@media (min-width: 800px)
+and (max-width: 1800px) {
+  body {
+    background-color: gold;
+  }
+  .media-query-my-example2 {
+    background-color: lightsalmon;
+    color: rebeccapurple;
+  }
+}
+
+@media (min-width: 0px)
+and (max-width: 800px) {
+  body {
+    background-color: lightpink;
+  }
+  .media-query-my-example3 {
+    background-color: black;
+    color: white;
+  }
+}
+@media (min-width: 800px)
+and (max-width: 1800px) {
+  body {
+    background-color: gold;
+  }
+  .media-query-my-example3 {
+    background-color: white;
+    color: black;
+  }
+}
