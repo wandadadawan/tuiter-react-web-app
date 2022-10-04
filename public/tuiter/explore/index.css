@@ -1,84 +1,20 @@
-.wd-search-and-setting-row {
-  margin-top: 12px;
+.wd-min-width-100-parent {
+  min-width: 100%;
 }
 
-.wd-search-bar {
-  width: 70%;
-  height: 30px;
-  border: hidden;
-  border-radius: 12px;
+.wd-cog-icon-color-blue {
+  color: #0d6efd;
+}
+
+.wd-search-icon-position {
+  left: 30px;
+  bottom: 25%;
+}
+
+.wd-starship {
+  left: 6px;
+  bottom: -5px;
+  font-family: "Arial";
+  font-weight: bold;
   color: white;
-  background-color: darkgray;
-  float: left;
-}
-
-.wd-search-gear {
-  color: dodgerblue;
-  margin-right: 12px;
-  font-size: 25px;
-  float:right;
-}
-
-.wd-tuit-blank-content {
-  background-color: rgb(30, 30, 30);
-  height: 10px;
-}
-
-.wd-nav-tab {
-  font-size: 15px;
-  margin-left: -56px; /* offset: 40 of ul inline padding and 16 li left padding */
-  margin-bottom: 3px;
-}
-
-.wd-nav-tab li {
-  color: rgb(110, 118, 125);
-  font-family: "Arial Black";
-  list-style-type: none;
-  padding: 16px;
-  display: inline-block;
-}
-
-.wd-nav-tab .wd-selected {
-  color: rgb(29, 161, 242);
-  padding-bottom: 16px;
-  border-bottom: solid 3px rgb(29, 161, 242);
-}
-
-.wd-suggested-post {
-  padding-top: 12px;
-  padding-bottom: 12px;
-}
-
-.wd-post-topic {
-  font-size: 13px;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  color: rgb(110, 118, 125);
-}
-
-.wd-post-title {
-  font-size: 18px;
-  margin: 0px;
-  font-family: "Arial Black";
-  color: white;
-}
-
-.wd-post-author {
-  font-size: 13px;
-  margin-top: 3px;
-  margin-bottom: 3px;
-  color: white;
-  font-family: "Arial Black";
-}
-
-.wd-post-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 20px;
-  float: right;
-  margin-right: 16px;
-}
-
-.wd-text-width {
-  width: calc(100vw - 200px);
 }
