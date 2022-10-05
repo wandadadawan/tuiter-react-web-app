@@ -18,3 +18,16 @@
   font-weight: bold;
   color: white;
 }
+
+.wd-negative-padding {
+  margin-right: -12px;
+}
+
+.wd-half-inner-stack {
+  font-size: 0.5em;
+}
+
+.wd-image {
+  width: 100px;
+  max-width: 100%;
+}
