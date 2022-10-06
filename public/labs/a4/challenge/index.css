@@ -76,15 +76,32 @@ body {
   border: none;
 }
 
+.nav-tabs {
+  border-bottom: 0 none;
+}
+
 .wd-nav-tabs .nav-item .nav-link.active {
   color: white;
-  border-bottom: solid 4px rgb(29, 161, 242);;
+  font-weight: bold;
+}
+
+.wd-nav-tabs .nav-item .wd-active-border {
+  padding-bottom: 12px;
+  border-bottom: solid 4px rgb(29, 161, 242);
 }
 
 .wd-nav-tabs .nav-item .nav-link {
   background-color: black;
   color: rgb(105, 115, 125);
-  font-weight: bold;
+}
+
+.wd-larger-font-icon-size {
+  font-size: 1.1em;
+}
+
+.wd-bottom-and-top-border {
+  border-bottom: rgb(50,50,50) 1px solid;
+  border-top: rgb(50,50,50) 1px solid;
 }
 
 .wd-starship {
@@ -95,12 +112,12 @@ body {
   color: white;
 }
 
-.wd-negative-padding {
-  margin-right: -12px;
+.wd-negative-margin {
+  margin-left: -12px;
 }
 
 .wd-half-inner-stack {
-  font-size: 0.5em;
+  font-size: 0.55em;
 }
 
 .wd-image {
