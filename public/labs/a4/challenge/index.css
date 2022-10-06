@@ -1,0 +1,109 @@
+body {
+  color: white;
+  background-color: black;
+}
+
+.wd-bg-color-dark-gray {
+  background-color: rgb(50,50,50);
+  color: white;
+}
+
+.wd-bg-color-black {
+  background-color: black;
+  color: white;
+}
+
+.wd-round-corner .list-group-item:first-child {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.wd-round-corner .list-group-item:last-child{
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.list-group-item.list-group-item-action {
+  background-color: black;
+  color: white;
+}
+
+.list-group-item.list-group-item-action.active {
+  font-weight: bold;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.wd-tuit-color {
+  background-color: rgb(29, 161, 242);
+}
+
+.wd-min-width-100-parent {
+  min-width: 100%;
+}
+
+.wd-fa-white-icon {
+  color:white;
+  background-color:black;
+}
+
+.wd-search-icon {
+  left: 30px;
+  bottom: 25%;
+  color: rgb(105, 115, 125);
+}
+
+.wd-middle-column {
+  border: rgb(50,50,50) 1px solid;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 6px;
+}
+
+.wd-right-content {
+  padding-left: 24px;
+  padding-top: 12px;
+}
+
+.wd-left-content {
+  padding-right: 24px;
+  padding-top: 6px;
+}
+
+.wd-nav-tabs .nav-item .nav-link {
+  border: none;
+}
+
+.wd-nav-tabs .nav-item .nav-link.active {
+  color: white;
+  border-bottom: solid 4px rgb(29, 161, 242);;
+}
+
+.wd-nav-tabs .nav-item .nav-link {
+  background-color: black;
+  color: rgb(105, 115, 125);
+  font-weight: bold;
+}
+
+.wd-starship {
+  left: 6px;
+  bottom: -5px;
+  font-family: "Arial";
+  font-weight: bold;
+  color: white;
+}
+
+.wd-negative-padding {
+  margin-right: -12px;
+}
+
+.wd-half-inner-stack {
+  font-size: 0.5em;
+}
+
+.wd-image {
+  width: 100px;
+  max-width: 100%;
+}
