@@ -2,21 +2,18 @@
   min-width: 100%;
 }
 
-.wd-cog-icon-color-blue {
-  color: #0d6efd;
-}
-
 .wd-search-icon-position {
   left: 30px;
   bottom: 25%;
 }
 
-.wd-starship {
-  left: 6px;
-  bottom: -5px;
+.wd-main-post-image {
+  left: 3px;
+  bottom: 0;
   font-family: "Arial";
-  font-weight: bold;
-  color: white;
+  font-weight: bolder;
+  font-size: 45px;
+  color: rgb(20, 20, 20);
 }
 
 .wd-negative-margin {
