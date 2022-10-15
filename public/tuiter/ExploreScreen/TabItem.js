@@ -1,7 +1,7 @@
 const TabItem = tab => {
   return (`
     <li class="nav-item">
-      <a class="nav-link ${tab.active == undefined ? '' : 'active'}" href="${tab.link}">${tab.label}</a>
+      <a class="nav-link ${tab.active ? 'active' : ''}" href="${tab.link}">${tab.label}</a>
     </li>
   `);
 };

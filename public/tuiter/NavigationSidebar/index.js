@@ -1,4 +1,3 @@
-/* eslint-env jquery */
 const NavigationSidebar = () => {
   return (`
     <ul class="list-group">
@@ -37,7 +36,7 @@ const NavigationSidebar = () => {
         </a>
     </ul>
     <div class="d-grid mt-2">
-      <a href="tweet.html" class="btn btn-primary btn-block rounded-pill">Tuit</a>
+      <a href="tweet.html" class="btn btn-primary btn-block rounded-pill">Tweet</a>
     </div>
   `);
 };

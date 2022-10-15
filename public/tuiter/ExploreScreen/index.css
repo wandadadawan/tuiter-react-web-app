@@ -1,7 +1,3 @@
-.wd-min-width-100-parent {
-  min-width: 100%;
-}
-
 .wd-search-icon-position {
   left: 30px;
   bottom: 25%;
@@ -14,14 +10,6 @@
   font-weight: bolder;
   font-size: 45px;
   color: rgb(20, 20, 20);
-}
-
-.wd-negative-margin {
-  margin-right: -12px;
-}
-
-.wd-half-inner-stack {
-  font-size: 0.5em;
 }
 
 .wd-image {

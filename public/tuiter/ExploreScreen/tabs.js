@@ -1,7 +1,7 @@
 export default [
   {
     label: 'For you',
-    active: 'active',
+    active: true,
     link: 'for-you.html',
   },
   {
