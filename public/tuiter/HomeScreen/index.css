@@ -1,0 +1,38 @@
+.wd-image {
+  width: 100px;
+  max-width: 100%;
+}
+
+li.list-group-item.wd-post {
+  background-color: #060606;
+  border: 1px solid rgb(50, 50, 50);
+}
+
+.wd-post a {
+  text-decoration: none;
+}
+
+.wd-post-image {
+  border: 1px solid rgb(50, 50, 50);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.wd-post-image-rounded {
+  border: 1px solid rgb(50, 50, 50);
+  border-radius: 15px;
+}
+
+.wd-post-content {
+  padding: 12px;
+  background-color: #060606;
+  border-bottom: 1px solid rgb(50, 50, 50);
+  border-left: 1px solid rgb(50, 50, 50);
+  border-right: 1px solid rgb(50, 50, 50);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.wd-post-icon-group a {
+  color: rgb(85, 85, 85);
+}

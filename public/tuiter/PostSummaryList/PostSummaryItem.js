@@ -2,7 +2,7 @@ const PostSummaryItem = (post) => {
   return (`
     <li class="list-group-item">
       <div class="row">
-        <div class="col-9 col-xxl-10">
+        <div class="col-9">
           <div class="text-secondary">${post.topic}</div>
           <div>
             <span class="fw-bold">${post.userName}</span>
@@ -12,7 +12,7 @@ const PostSummaryItem = (post) => {
           <div class="fw-bold">${post.title}</div>
           <div class="text-secondary">${post.tweets == undefined ? '' : post.tweets + ' Tuits'}</div>
         </div>
-        <div class="col-3 col-xxl-2">
+        <div class="col-3">
           <img src="${post.image}" class="float-end rounded-3 wd-image">
         </div>
       </div>
