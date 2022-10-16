@@ -3,7 +3,7 @@ const PostItem = (post) => {
     <li class="list-group-item wd-post">
       <div class="row mb-2">
         <div class="col-1">
-          <img src="${post.avatarIcon}" width="48px" height="48px" class="rounded-circle">
+          <img src="${post.avatarIcon}" width="45px" height="45px" class="rounded-circle">
         </div>
         <div class="col-11">
           <span class="fw-bold text-white">${post.userName}</span>
