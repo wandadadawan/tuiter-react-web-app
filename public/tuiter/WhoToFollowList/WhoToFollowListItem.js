@@ -7,7 +7,7 @@ const WhoToFollowListItem = (who) => {
         </div>
         <div class="col-8">
           <span class="fw-bold">${who.userName}</span>
-          <i class="fas fa-circle"></i>
+          <i class="fas fa-check-circle"></i>
           <div>@${who.handle}</div>
         </div>
         <div class="col-2 d-flex justify-content-end align-items-center">

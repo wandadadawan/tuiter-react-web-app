@@ -9,10 +9,18 @@
   font-family: "Arial";
   font-weight: bolder;
   font-size: 45px;
-  color: rgb(20, 20, 20);
+  color: rgb(40, 40, 40);
 }
 
 .wd-image {
   width: 100px;
   max-width: 100%;
+}
+
+.wd-fa-stack {
+  width: 1em;
+}
+
+.wd-half-inner-stack {
+  font-size: 0.5em;
 }

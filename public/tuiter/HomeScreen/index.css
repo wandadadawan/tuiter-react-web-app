@@ -3,6 +3,14 @@
   max-width: 100%;
 }
 
+.wd-fa-stack {
+  width: 1em;
+}
+
+.wd-half-inner-stack {
+  font-size: 0.5em;
+}
+
 li.list-group-item.wd-post {
   background-color: #060606;
   border: 1px solid rgb(50, 50, 50);

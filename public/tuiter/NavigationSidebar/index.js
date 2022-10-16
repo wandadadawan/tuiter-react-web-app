@@ -31,7 +31,10 @@ const NavigationSidebar = (active) => {
           <span class="d-none d-xl-inline">Profile</span>
         </a>
         <a href="#" class="list-group-item list-group-item-action ${active === 'More' ? 'active' : ''}">
-          <i class="fas fa-circle"></i>
+          <span class="fa-stack fa-1x wd-fa-stack">
+            <i class="fas fa-circle fa-stack-1x"></i>
+            <i class="fas fa-ellipsis-h fa-stack-1x fa-inverse text-black wd-half-inner-stack"></i>
+          </span>
           <span class="d-none d-xl-inline">More</span>
         </a>
     </ul>

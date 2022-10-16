@@ -8,6 +8,7 @@ const ExploreComponent = () => {
     ${SearchBar()}
     ${NavTab()}
     ${MainPost()}
+    <div class="mb-2"></div>
     ${PostSummaryList()}
   `);
 };

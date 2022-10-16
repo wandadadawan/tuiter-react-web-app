@@ -3,7 +3,7 @@ import posts from "./posts.js";
 
 const PostSummaryList = () => {
   return (`
-    <ul class="list-group mt-2">
+    <ul class="list-group">
       ${posts.map(PostSummaryItem).join('')}
     </ul>
   `);
