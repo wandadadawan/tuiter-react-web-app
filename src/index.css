@@ -11,3 +11,63 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.wd-fa-stack {
+  width: 1em;
+}
+
+.wd-half-inner-stack {
+  font-size: 0.5em;
+}
+
+.wd-post-summary-image {
+  object-fit: cover;
+}
+
+.wd-nudge-up {
+  left: 30px;
+  bottom: 25%;
+}
+
+.wd-main-post-image {
+  left: 3px;
+  bottom: 0;
+  font-family: "Arial";
+  font-weight: bolder;
+  font-size: 45px;
+  color: rgb(40, 40, 40);
+}
+
+li.list-group-item.wd-post {
+  background-color: #060606;
+  border: 1px solid rgb(50, 50, 50);
+}
+
+.wd-post a {
+  text-decoration: none;
+}
+
+.wd-post-image {
+  border: 1px solid rgb(50, 50, 50);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.wd-post-image-rounded {
+  border: 1px solid rgb(50, 50, 50);
+  border-radius: 15px;
+}
+
+.wd-post-content {
+  padding: 12px;
+  background-color: #060606;
+  border-bottom: 1px solid rgb(50, 50, 50);
+  border-left: 1px solid rgb(50, 50, 50);
+  border-right: 1px solid rgb(50, 50, 50);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.wd-post-icon-group a {
+  color: rgb(85, 85, 85);
+}
