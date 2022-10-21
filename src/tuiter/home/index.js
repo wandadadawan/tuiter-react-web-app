@@ -5,7 +5,7 @@ const HomeComponent = () => {
   return (
       <>
         <ul className="list-group">
-          {postsArray.map(post => <PostItem key={post.id} post={post}/>)}
+          {postsArray.map(post => <PostItem key={post._id} post={post}/>)}
         </ul>
       </>
   );

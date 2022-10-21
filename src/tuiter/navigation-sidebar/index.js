@@ -4,10 +4,9 @@ import {useLocation} from "react-router";
 const NavigationSidebar = () => {
   const {pathname} = useLocation();
   const paths = pathname.split("/");
-  console.log(paths);
   let active = '';
   if (paths.length < 3) {
-    active = 'explore'
+    active = 'home';
   } else {
     active = paths[2];
   }
