@@ -5,7 +5,7 @@ const NavigationSidebar = () => {
   const {pathname} = useLocation();
   const paths = pathname.split("/");
   let active = '';
-  if (paths.length < 3) {
+  if (paths.length < 3 || paths[2] === '') {
     active = 'home';
   } else {
     active = paths[2];
