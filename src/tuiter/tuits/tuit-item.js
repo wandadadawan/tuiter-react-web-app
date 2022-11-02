@@ -1,3 +1,5 @@
+import TuitStats from "./tuit-stats";
+
 const TuitItem = ({
     tuit = {
       _id: 234,
@@ -15,7 +17,22 @@ const TuitItem = ({
     }
 }) => {
   return (
-      <></>
+      <li className="list-group-item wd-post">
+        <div className="row mb-2">
+          <div className="col-1">
+            <img src={`../../images/${tuit.image}`} width={45} height={45} className="rounded-circle" alt={tuit.image}/>
+          </div>
+          <div className="col-11">
+            <div className="ms-3">
+              <span className="fw-bold text-white">{tuit.userName}</span>
+              <i className="bi bi-patch-check-fill ms-1 me-1"></i>
+              <span className="text-secondary">{tuit.handle} · {tuit.time}<span className="float-end"><i className="fa-solid fa-ellipsis"></i></span></span>
+              <div>{tuit.tuit}</div>
+            </div>
+            <TuitStats tuit={tuit}/>
+          </div>
+        </div>
+      </li>
   );
 };
 export default TuitItem;

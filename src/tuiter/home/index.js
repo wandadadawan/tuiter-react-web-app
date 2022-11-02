@@ -1,12 +1,9 @@
-import postsArray from "./posts.json";
-import PostItem from "./post-item";
+import TuitsList from "../tuits";
 
 const HomeComponent = () => {
   return (
       <>
-        <ul className="list-group">
-          {postsArray.map(post => <PostItem key={post._id} post={post}/>)}
-        </ul>
+        <TuitsList/>
       </>
   );
 };
