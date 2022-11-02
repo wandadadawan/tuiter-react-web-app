@@ -7,7 +7,7 @@ import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
 import {configureStore} from "@reduxjs/toolkit";
 import HomeComponent from "./home";
-import PostSummaryList from "./post-summary-list";
+
 
 const store = configureStore({
   reducer: { who: whoReducer, tuits: tuitsReducer}
@@ -28,11 +28,7 @@ function Tuiter() {
             </Routes>
           </div>
           <div className="d-none d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-            <Routes>
-              <Route index element={<PostSummaryList/>}/>
-              <Route path="home" element={<PostSummaryList/>}/>
-              <Route path="explore" element={<WhoToFollowList/>}/>
-            </Routes>
+            <WhoToFollowList/>
           </div>
         </div>
       </Provider>
