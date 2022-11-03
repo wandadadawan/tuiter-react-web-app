@@ -30,7 +30,7 @@ const Profile = () => {
             <p>{profile.bio}</p>
             <div>
               <span className="me-3"><i className="bi bi-geo-alt me-1"></i>{profile.location}</span>
-              <span className="me-3"><i className="bi bi-balloon me-1"></i>Born {months[birthdayArray[0]] + " " + birthdayArray[1] + ", " + birthdayArray[2]}</span>
+              <span className="me-3"><i className="bi bi-balloon me-1"></i>Born {months[parseInt(birthdayArray[0])] + " " + parseInt(birthdayArray[1]) + ", " + birthdayArray[2]}</span>
               <span className="me-3"><i className="bi bi-calendar3 me-1"></i>Joined {months[joindayArray[0]] + " " + joindayArray[1]}</span>
             </div>
           </div>

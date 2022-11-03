@@ -6,11 +6,23 @@ import {updateProfile} from "../reducers/profile-reducer";
 const EditProfile = () => {
   const profile = useSelector(state => state.profile);
 
+  // Reformat date of birth
+  let profileBirthdayMonth = profile.dateOfBirth.split("/")[0];
+  let profileBirthdayDate = profile.dateOfBirth.split("/")[1];
+  if (profileBirthdayMonth.length === 1) {
+    profileBirthdayMonth = "0" + profileBirthdayMonth;
+  }
+  if (profileBirthdayDate.length === 1) {
+    profileBirthdayDate = "0" + profileBirthdayDate;
+  }
+  let profileBirthdayYear = profile.dateOfBirth.split("/")[2];
+
   const [nameString, setNameString] = useState(profile.firstName + " " + profile.lastName);
   const [bioString, setBioString] = useState(profile.bio);
   const [locationString, setLocationString] = useState(profile.location);
   const [websiteString, setWebsiteString] = useState(profile.website);
-  const [birthdateString, setBirthdateString] = useState(profile.dateOfBirth);
+  const [birthdateString, setBirthdateString] = useState(profileBirthdayYear + "-" + profileBirthdayMonth + "-" + profileBirthdayDate);
+  const [dateInEdit, setDateInEdit] = useState(false);
 
   const changeName = (event) => {
     setNameString(event.target.value);
@@ -34,13 +46,14 @@ const EditProfile = () => {
 
   const dispatch = useDispatch();
   const saveHandler = () => {
+    const birthdateStringArray = birthdateString.split("-");
     const newProfile = {
       firstName: nameString.split(" ")[0],
       lastName: nameString.split(" ")[1],
       bio: bioString,
       location: locationString,
       website: websiteString,
-      dateOfBirth: birthdateString
+      dateOfBirth: birthdateStringArray[1] + "/" + birthdateStringArray[2] + "/" + birthdateStringArray[0]
     }
     dispatch(updateProfile(newProfile));
   };
@@ -84,9 +97,16 @@ const EditProfile = () => {
                   onChange={changeWebsite}/>
           </div>
           <div className="wd-edit-profile-border mb-3">
-            <label className="ps-3 fa-sm">Birth date</label>
-            <input type="text" className="form-control bg-black text-white pt-0" value={birthdateString}
-                  onChange={changeBirthdate}/>
+            <label className="ps-3 me-2 fa-sm">Birth date</label>
+            {
+              !dateInEdit && (<span className="fa-sm text-primary" onClick={() => setDateInEdit(true)}> · Edit</span>)
+            }
+            {
+              !dateInEdit && <input type="text" className="form-control bg-black text-white pt-0" value={birthdateString} readOnly/>
+            }
+            {
+              dateInEdit && <input type="date" value={birthdateString} onChange={changeBirthdate}/>
+            }
           </div>
         </div>
       </div>
