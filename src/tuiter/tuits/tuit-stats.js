@@ -1,4 +1,5 @@
-import {Link} from "react-router-dom";
+import {useDispatch} from "react-redux";
+import {likeTuit, unlikeTuit} from "../reducers/tuits-reducer";
 
 const TuitStats = ({
   tuit = {
@@ -16,17 +17,26 @@ const TuitStats = ({
     tuit: "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
   }
 }) => {
+  const dispatch = useDispatch();
+  const unlikeTuitHandler = (tuit) => {
+    dispatch(unlikeTuit(tuit));
+  };
+
+  const likeTuitHandler = (tuit) => {
+    dispatch(likeTuit(tuit));
+  };
+
   return (
-      <div className="mt-3 row wd-post-icon-group">
-        <Link to="#" className="col-3"><i className="bi bi-chat me-3"></i>{tuit.replies}</Link>
-        <Link to="#" className="col-3"><i className="fas fa-retweet me-3"></i>{tuit.retuits}</Link>
+      <div className="mt-3 row wd-post-icon-group text-white-50">
+        <div className="col-3"><i className="bi bi-chat me-3"></i>{tuit.replies}</div>
+        <div className="col-3"><i className="fas fa-retweet me-3"></i>{tuit.retuits}</div>
         {
-          tuit.liked && <Link to="#" className="col-3"><i className="bi bi-heart-fill text-danger me-3"></i>{tuit.likes}</Link>
+          tuit.liked && <div className="col-3" onClick={() => unlikeTuitHandler(tuit)}><i className="bi bi-heart-fill text-danger me-3"></i>{tuit.likes}</div>
         }
         {
-          !tuit.liked && <Link to="#" className="col-3"><i className="bi bi-heart me-3"></i>{tuit.likes}</Link>
+          !tuit.liked && <div className="col-3" onClick={() => likeTuitHandler(tuit)}><i className="bi bi-heart me-3"></i>{tuit.likes}</div>
         }
-        <Link to="#" className="col-3"><i className="bi bi-upload me-3"></i></Link>
+        <div className="col-3"><i className="bi bi-upload me-3"></i></div>
       </div>
   );
 };
