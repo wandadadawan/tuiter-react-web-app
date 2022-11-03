@@ -83,3 +83,17 @@ li.list-group-item.wd-post {
   border: 1px white solid;
   color: white;
 }
+
+.wd-edit-profile-border {
+  border: 1px lightgrey solid;
+}
+
+input.form-control:focus {
+  border-color: lightgrey;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+textarea.form-control:focus {
+  border-color: lightgrey;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075);
+}

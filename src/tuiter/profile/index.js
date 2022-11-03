@@ -1,16 +1,16 @@
 import {useSelector} from "react-redux";
+import {Link} from "react-router-dom";
 
 const Profile = () => {
   const profile = useSelector(state => state.profile);
-
   const birthdayArray = profile.dateOfBirth.split("/");
   const joindayArray = profile.dateJoined.split("/");
   const months = ["", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
   return (
       <div>
-        <div className="d-flex align-content-center">
-          <div className="col-1 pt-3">
+        <div className="d-flex flex-wrap align-items-center">
+          <div className="col-1">
             <i className="bi bi-arrow-left"></i>
           </div>
           <div className="col-auto">
@@ -21,7 +21,7 @@ const Profile = () => {
         <img src={`../../images/${profile.bannerPicture}`} height={130} alt={profile.bannerPicture} className="w-100 rounded-1 mt-1 wd-post-summary-image"/>
         <div>
           <img src={`../../images/${profile.profilePicture}`} height={80} width={80} alt={profile.profilePicture} className="rounded-circle ms-3 wd-profile-image"/>
-          <button className="btn float-end wd-edit-profile-button rounded-pill mt-2 me-2">Edit Profile</button>
+          <Link to="/tuiter/edit-profile"><button className="btn float-end wd-edit-profile-button rounded-pill mt-2 me-2">Edit Profile</button></Link>
         </div>
         <div className="ms-3">
           <h5 className="fw-bold mb-0">{profile.firstName} {profile.lastName}</h5>
