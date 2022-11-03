@@ -1,0 +1,16 @@
+{
+  "_id": 123,
+  "firstName": "Chu",
+  "lastName": "Wang",
+  "handle": "@wandawang",
+  "profilePicture": "profile-image.jpg",
+  "bannerPicture": "banner.jpg",
+  "bio": "Computer Science student, Game and Movie enthusiast. Retuits and likes are not endorsements.",
+  "website": "https://github.com/wandachu",
+  "location": "Seattle, WA",
+  "dateOfBirth": "5/31/1903",
+  "dateJoined": "12/2021",
+  "followingCount": 520,
+  "followersCount": 32,
+  "numberOfTuits": 324
+}

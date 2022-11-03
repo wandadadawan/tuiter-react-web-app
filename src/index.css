@@ -71,3 +71,15 @@ li.list-group-item.wd-post {
 .wd-post-icon-group a {
   color: rgb(85, 85, 85);
 }
+
+.wd-profile-image {
+  position: relative;
+  bottom: 40px;
+  border: black 2px solid;
+}
+
+.wd-edit-profile-button {
+  background-color: black;
+  border: 1px white solid;
+  color: white;
+}
