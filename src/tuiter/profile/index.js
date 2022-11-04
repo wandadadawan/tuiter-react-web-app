@@ -11,7 +11,7 @@ const Profile = () => {
       <div>
         <div className="d-flex flex-wrap align-items-center">
           <div className="col-1">
-            <i className="bi bi-arrow-left"></i>
+            <Link to="/tuiter/home"><i className="bi bi-arrow-left text-white-50"></i></Link>
           </div>
           <div className="col-auto">
             <h5 className="mb-0">{profile.firstName} {profile.lastName}</h5>
