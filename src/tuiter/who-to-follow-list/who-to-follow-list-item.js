@@ -1,6 +1,6 @@
 const WhoToFollowListItem = (
     {
-      who = {userName: 'NASA', handle: 'NASA', avatarIcon: 'nasa-logo.png', _id: 123}
+      who = {username: 'NASA', handle: 'NASA', avatarIcon: 'nasa-logo.png', _id: 123}
     }
 ) => {
   return (
@@ -10,10 +10,10 @@ const WhoToFollowListItem = (
             <img src={`/images/${who.avatarIcon}`}
                  height={48}
                  className="rounded-circle"
-                 alt={who.userName}/>
+                 alt={who.username}/>
           </div>
           <div className="col-8">
-            <span className="fw-bold">{who.userName}</span>
+            <span className="fw-bold">{who.username}</span>
             <i className="fas fa-check-circle ms-1"></i>
             <div>@{who.handle}</div>
           </div>

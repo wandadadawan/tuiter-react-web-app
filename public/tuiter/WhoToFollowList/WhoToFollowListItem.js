@@ -6,7 +6,7 @@ const WhoToFollowListItem = (who) => {
           <img src="${who.avatarIcon}" width="40px" class="rounded-circle">
         </div>
         <div class="col-8">
-          <span class="fw-bold">${who.userName}</span>
+          <span class="fw-bold">${who.username}</span>
           <i class="fas fa-check-circle"></i>
           <div>@${who.handle}</div>
         </div>

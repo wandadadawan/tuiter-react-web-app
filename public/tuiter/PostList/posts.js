@@ -1,6 +1,6 @@
 export default [
   {
-    userName: 'Elon Musk',
+    username: 'Elon Musk',
     handle: 'elonmusk',
     avatarIcon: '../../images/musk-avatar.jpg',
     time: '23h',
@@ -14,7 +14,7 @@ export default [
     like: '37.5K',
   },
   {
-    userName: 'New York Post',
+    username: 'New York Post',
     handle: 'nypost',
     avatarIcon: '../../images/nypost-avatar.jpeg',
     time: '23h',

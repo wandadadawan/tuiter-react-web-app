@@ -5,7 +5,7 @@ const PostSummaryItem = (post) => {
         <div class="col-9">
           <div class="text-secondary">${post.topic}</div>
           <div>
-            <span class="fw-bold">${post.userName}</span>
+            <span class="fw-bold">${post.username}</span>
             <i class="fas fa-check-circle"></i>
             <span class="text-secondary"> - ${post.time}</span>
           </div>

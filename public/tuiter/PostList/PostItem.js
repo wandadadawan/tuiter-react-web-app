@@ -6,7 +6,7 @@ const PostItem = (post) => {
           <img src="${post.avatarIcon}" width="45px" height="45px" class="rounded-circle">
         </div>
         <div class="col-11">
-          <span class="fw-bold text-white">${post.userName}</span>
+          <span class="fw-bold text-white">${post.username}</span>
           <i class="fas fa-check-circle"></i>
           <span class="text-secondary">@${post.handle} &#8226 ${post.time}<span class="float-end"><i class="fa-solid fa-ellipsis"></i></span></span>
           <div>${post.content}</div>

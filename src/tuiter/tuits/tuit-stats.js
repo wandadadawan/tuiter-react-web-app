@@ -5,7 +5,7 @@ const TuitStats = ({
   tuit = {
     _id: 234,
     topic: "Space",
-    userName: "SpaceX",
+    username: "SpaceX",
     time: "2h",
     title: "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
     image: "spacex.jpg",

@@ -2,7 +2,7 @@
   {
     "_id": 234,
     "topic": "Space",
-    "userName": "SpaceX",
+    "username": "SpaceX",
     "time": "2h",
     "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
     "image": "spacex.jpg",
@@ -16,7 +16,7 @@
   {
     "_id": 345,
     "topic": "Electric Vehicles",
-    "userName": "Tesla",
+    "username": "Tesla",
     "time": "4d",
     "title": "Tesla Autopilot is a suite of advanced driver-assistance system (ADAS) features offered by Tesla that amounts to SAE International Level 2 vehicle automation",
     "image": "tesla-logo.png",
@@ -30,7 +30,7 @@
   {
     "_id": 456,
     "topic": "Space",
-    "userName": "SpaceX",
+    "username": "SpaceX",
     "time": "2h",
     "title": "Tesla Cybertruck lands on Mars and picks up the Curiosity rover on its 6' bed",
     "image": "spacex.jpg",
