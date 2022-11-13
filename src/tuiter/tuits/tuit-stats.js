@@ -19,28 +19,33 @@ const TuitStats = ({
   }
 }) => {
   const dispatch = useDispatch();
-
   return (
       <div className="mt-3 row wd-post-icon-group text-white-50">
-        <div className="col-2"><i className="bi bi-chat me-1"></i>{tuit.replies}</div>
-        <div className="col-2"><i className="fas fa-retweet me-1"></i>{tuit.retuits}</div>
-        <div className="col-6">
-          Likes: {tuit.likes}
-          <i onClick={() => dispatch(updateTuitThunk(
+        <div className="col-2"><span className="wd-clickable"><i className="bi bi-chat me-2"></i>{tuit.replies}</span></div>
+        <div className="col-2"><span className="wd-clickable"><i className="fas fa-retweet me-2"></i>{tuit.retuits}</span></div>
+        <div className="col-2">
+          <span className="wd-clickable" onClick={() => dispatch(updateTuitThunk(
               {
                 ...tuit,
                 likes: tuit.likes + 1
               }
-              ))} className="bi bi-heart-fill text-danger ms-1 me-2"></i>
-          Dislikes: {tuit.dislikes}
-          <i onClick={() => dispatch(updateTuitThunk(
+          ))}>
+            <i className="bi bi-heart-fill text-danger me-2"></i>
+            {tuit.likes}
+          </span>
+        </div>
+        <div className="col-2">
+          <span className="wd-clickable" onClick={() => dispatch(updateTuitThunk(
               {
                 ...tuit,
                 dislikes: tuit.dislikes + 1
               }
-          ))} className="bi bi-hand-thumbs-down-fill ms-1"></i>
+          ))}>
+            <i className="bi bi-hand-thumbs-down-fill me-2"></i>
+            {tuit.dislikes}
+          </span>
         </div>
-        <div className="col-2"><i className="bi bi-upload"></i></div>
+        <div className="col-2"><i className="bi bi-upload wd-clickable"></i></div>
       </div>
   );
 };

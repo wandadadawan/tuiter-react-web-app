@@ -101,3 +101,7 @@ textarea.form-control:focus {
 .bi-x-lg:hover {
   cursor: pointer;
 }
+
+.wd-clickable:hover{
+  cursor: pointer;
+}
