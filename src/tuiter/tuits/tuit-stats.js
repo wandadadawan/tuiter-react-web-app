@@ -21,8 +21,8 @@ const TuitStats = ({
   const dispatch = useDispatch();
   return (
       <div className="mt-3 row wd-post-icon-group text-white-50">
-        <div className="col-2"><span className="wd-clickable"><i className="bi bi-chat me-2"></i>{tuit.replies}</span></div>
-        <div className="col-2"><span className="wd-clickable"><i className="fas fa-retweet me-2"></i>{tuit.retuits}</span></div>
+        <div className="col-2"><span className="wd-clickable"><i className="bi bi-chat me-1"></i>{tuit.replies}</span></div>
+        <div className="col-2"><span className="wd-clickable"><i className="fas fa-retweet me-1"></i>{tuit.retuits}</span></div>
         <div className="col-2">
           <span className="wd-clickable" onClick={() => dispatch(updateTuitThunk(
               {
@@ -30,7 +30,7 @@ const TuitStats = ({
                 likes: tuit.likes + 1
               }
           ))}>
-            <i className="bi bi-heart-fill text-danger me-2"></i>
+            <i className="bi bi-heart-fill text-danger me-1"></i>
             {tuit.likes}
           </span>
         </div>
@@ -41,7 +41,7 @@ const TuitStats = ({
                 dislikes: tuit.dislikes + 1
               }
           ))}>
-            <i className="bi bi-hand-thumbs-down-fill me-2"></i>
+            <i className="bi bi-hand-thumbs-down-fill me-1"></i>
             {tuit.dislikes}
           </span>
         </div>
